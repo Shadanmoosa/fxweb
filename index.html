@@ -47,16 +47,9 @@
   }
 }
 
-@media (max-width: 767px) {
-    .heading-section img {
-      margin-bottom: 25px; /* Adjust the value as needed */
-    }
-  }
-
-  .slider-item {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+/* Mobile view adjustments */
+.owl-carousel {
+    pointer-events: none;
 }
 
 
@@ -92,7 +85,7 @@
       <div class="slider-item js-fullheight">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="false">
           	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/tamilweddding.jpg);">
           		<h3 class="vr">Madhuri And Bharath</h3>
           	</div>
@@ -110,7 +103,7 @@
       <div class="slider-item js-fullheight">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="false">
           	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/dubaiwedding.jpg);">
           		<h3 class="vr">Shabidka And Vivek</h3>
           	</div>
@@ -552,6 +545,11 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
+
+
+
+
+  <!--  -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
