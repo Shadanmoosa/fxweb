@@ -9898,3 +9898,17 @@ textarea.form-control {
 }
 
 
+.scroll-button {
+  position: absolute;
+  bottom: 20px; /* Adjust distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10; /* Ensures it stays on top of the carousel */
+}
+
+.scroll-button img {
+  height: 20px;
+  color: #fff;
+}
+
