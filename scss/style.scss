@@ -8,8 +8,6 @@ $black: #000000;
 // $darken: #3a4348;
 
 $primary: #0033c7;
-
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -872,6 +870,9 @@ h1, h2, h3, h4, h5,
 		}
 	}
 }
+
+// instagram
+
 
 //STAFF
 .staff{

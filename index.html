@@ -135,6 +135,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ava';
+    src: url('./fonts/AVGARDD.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* Target mobile screens */
 @media (max-width: 767px) {
@@ -147,14 +154,128 @@
 	}
 }
 
+/* instagram */
+@media (max-width: 768px) {
+  #fx-feeds-section .container-wrap .row > div {
+    flex: 0 0 50%; /* Set width to 50% for each column */
+    max-width: 50%;
+  }
+  #fx-feeds-section h3 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Optional: reduce margin for better spacing */
+  }
 
+  #fx-feeds-section a.icon {
+    font-size: 1em; /* Adjust icon size */
+    padding: 8px; /* Optional: adjust padding for better spacing */
+    text-align: center; /* Center-align if desired */
+  }
+}
 
+/* #fx-feeds-section .project:hover .text {
+  background: linear-gradient(45deg, rgba(240, 148, 51, 0.8), rgba(230, 104, 60, 0.8), rgba(220, 39, 67, 0.8), rgba(204, 35, 102, 0.8), rgba(188, 24, 136, 0.8));
+} */
 
+.project1 {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    z-index: 0;
+}
 
+.project1:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: linear-gradient(45deg, rgba(240, 148, 51, 0.8), rgba(230, 104, 60, 0.8), rgba(220, 39, 67, 0.8), rgba(204, 35, 102, 0.8), rgba(188, 24, 136, 0.8));
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
 
+.project1 img {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+    z-index: -1;
+    transition: transform 0.6s;
+}
 
+.project1 .text {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.6s, top 0.6s; /* Add top transition */
+}
 
-  
+.project1 .text span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.project1 .text h3 {
+    color: #fff; /* Replace $white with the actual color code */
+}
+
+.project1 .text h3 a {
+    color: #fff; /* Replace $white with the actual color code */
+}
+
+.project1 .icon {
+    position: absolute;
+    bottom: -50px;
+    left: 2em;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff; /* Replace $white with the actual color code */
+    transform: translateY(-50%);
+    border-radius: 50%; /* Adjusted to use standard CSS */
+    transition: bottom 0.6s, opacity 0.6s; /* Add bottom and opacity transition */
+    opacity: 0;
+    z-index: 2;
+}
+
+.project1 .icon span {
+    color: #fff; /* Replace $white with the actual color code */
+    font-size: 20px;
+}
+
+.project1:hover,
+.project1:focus {
+    /* Using .project1:hover to target hover state */
+}
+
+.project1:hover:after {
+    opacity: 0.8;
+}
+
+.project1:hover .text {
+    opacity: 1;
+    top: 0;
+}
+
+.project1:hover .icon {
+    bottom: 10px;
+    opacity: 1;
+}
+
+.project1:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
 
 
 
@@ -637,6 +758,114 @@
 		</section>
 		<!-- end work section -->
 
+		<!-- instagram section -->
+		<section id="fx-feeds-section" class="ftco-section ftco-no-pb" style="background-color: #f6f3f0;">
+			<div class="container">
+				<div class="row justify-content-start mb-5 pb-2">
+			  <div class="col-md-4 heading-section ftco-animate">
+				  <span class="subheading subheading-with-line"><small class="pr-2" style="background-color: rgb(246, 243, 240)">Instagram</small></span>
+				<h2 class="mb-4">FX FEEDS</h2>
+			  </div>
+			</div>
+			</div>
+			<div class="container-wrap" >
+				<div class="row no-gutters p-5" style="margin-top: -70px;">
+					<div class="col-md-6 col-lg-3 col-sm-6 ftco-animate ms">
+						<div class="project1">
+							<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="overlay"></div>
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 col-sm-6  ftco-animate">
+						<div class="project1">
+							<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="text">
+								<h3><a href="">Instagram</a></h3>
+							</div>
+							<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="icon-instagram"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		
+		
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -654,7 +883,6 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-
             </div>
           </div>
           <div class="col-md">
